@@ -1,0 +1,14 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+  name: my-pod
+  labels:
+    app: web-server
+    type: front-end
+
+spec:
+  containers:
+    - name: web-server
+      image: nginx
